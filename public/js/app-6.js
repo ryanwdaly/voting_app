@@ -3,8 +3,8 @@ class ProductList extends React.Component {
   handleProductUpVote(productId) {
     console.log(productId + ' was upvoted.');
   }
-
   render() {
+
     const products = Seed.products.sort((a, b) => (
       b.votes - a.votes
     ));
